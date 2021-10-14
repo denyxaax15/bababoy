@@ -1,5 +1,6 @@
-function soma(n1, n2) {
-    return n1 + n2
-}
+function sumNumber(){
+    var fstnum= parseInt(document.getElementById("real1").value)
+    var secnum= parseInt(document.getElementById("real2").value)
 
-window.alert(soma())
+    console.log(fstnum + secnum)
+}
