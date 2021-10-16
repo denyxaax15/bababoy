@@ -1,92 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*
 
-body
+*
 {
-    background: black;
-    background-color: black;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background-color: ecf0f3;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    
-    position: absolute;
+}
 
-    top: 0;
-    bottom:0;
-    left:0;
-    right:0;
-
+.container
+{
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-
-    min-height: 400px;
+    background-color: #ecf0f3;
 }
 
-.container 
+.calc
 {
-    width: 100%;
-    max-width: 500px;
+    box-shadow: 
+        6px 6px 13px #fff,
+        6px 6px 13px rgba(0, 0, 0,.16);
 
-    text-align: center;
-
-    margin:32px;
-
-    background-color:rgba(255, 255, 255, 0.801);
-    border-radius:8px;
+    border-radius: 28px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 66px);
 }
 
-.container input
+input
 {
-    margin-top: 5%;
-    border-radius: 6px;
-    height: 20px;
-    width:80%;
+    grid-column: span 4;
+    height: 68px;
+    width: 258px;
 
-    padding:12px;
+    box-shadow: 
+    inset -6px -6px 13px #fff,
+    inset 6px 6px 13px rgba(0, 0, 0,.16);
 
-    outline: none;
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 32px;
+    color: rgb(26, 26, 25);
 
-    font-size: 16px;
+    text-align: end;
 
-    color: tomato;
-    margin-bottom: auto;
+    margin: 40px 0 30px 0;
+    padding: 20px;
+    font-size: 40px;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-
-input[type=number] 
-{
-  -moz-appearance: textfield;
-}
-
-
 
 button 
 {
-    font-family: 'Oswald', sans-serif;
+    box-shadow: 
+        6px 6px 13px #fff,
+        6px 6px 13px rgba(0, 0, 0,.16);
+
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
     font-weight: bold;
-      
-    margin-top:20px;
-    margin-bottom:10px;
-
-    width:200px;
-    padding:12px;
-  
-    color: tomato;
-    background-color:rgb(49, 49, 49);
-    border:800px;
-    border-radius: 6px;
-    border-color: tomato;
-
-    cursor: pointer;
-    outline: none;
+    font-size: 20px;
 }
 
-button:hover 
+.equal
 {
-    background-color: rgba(255, 99, 71, 0.527);
+    width: 120px;
+    border-radius: 42px;
 }
