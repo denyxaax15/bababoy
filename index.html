@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Bababoey</title>
-
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>CALCULADORA BABABOEY</h1>
-        <h3>DIGITE DOIS VALORES E ESCOLHA A OPERAÇÃO</h3>
-        <div id="input-wrapper">
-        <br><input id="real1" type="number" placeholder="Digite o valor um valor">
-        <br><input id="real2" type="number" placeholder="Digite o valor um segundo valor">
+        <div class="calc">
+            <input id="inputText" type="text"  placeholder="0">
+            <button onclick="">C</button>
+            <button onclick="">DEL</button>
+            <button onclick="">/</button>
+            <button onclick="">%</button>
+            <button onclick="">7</button>
+            <button onclick="">8</button>
+            <button onclick="">9</button>
+            <button onclick="">*</button>
+            <button onclick="">4</button>
+            <button onclick="">5</button>
+            <button onclick="">6</button>
+            <button onclick="">-</button>
+            <button onclick="">1</button>
+            <button onclick="">2</button>
+            <button onclick="">3</button>
+            <button onclick="">+</button>
+            <button onclick="">.</button>
+            <button onclick="">0</button>
+            <button class="equal" onClick="Result()">=</button>
+        <script src="./script.js"></script>
         </div>
-        <button id="button" onClick="sumNumber()">+</button>
-        <button id="button" onClick="subNumber()">-</button><br>
-        <button id="button" onClick="divNumber()">/</button>
-        <button id="button" onClick="mulNumber()">*</button><br>
-        <h3>O PRODUTO SERÁ MOSTRADO NO TOPO DA PÁGINA.</h3>
     </div>
 </body>
 </html>
